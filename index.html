@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Library Management System</h1>
+    <div class="form">
+      <input type="text" id="bookTitle" placeholder="Book Title" />
+      <input type="text" id="bookAuthor" placeholder="Author" />
+      <button id="addBookBtn">Add Book</button>
+    </div>
+    <h2>Books List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No.</th>
+          <th>Photo</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="booksList"></tbody>
+    </table>
+  </div>
+
+  <!-- Modal for Camera -->
+  <div id="cameraModal" class="modal">
+    <div class="modal-content">
+      <video id="cameraStream" autoplay></video>
+      <button id="captureBtn">Capture</button>
+      <button id="closeModalBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
